@@ -128,7 +128,7 @@ body{
 .top{
     color: #fff;
     text-align: center;
-    padding-top: 105px;
+    padding-top: 250px;
     padding-bottom: 50px;
     position: absolute;
     z-index: 5;
@@ -155,9 +155,12 @@ body{
 }
 
 .swiper-wrapper{
-    background: rgba(21,21,21,.3);
+    background: rgba(21,21,21,.6);
 }
 
 .swiper-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 100vh;
 }
