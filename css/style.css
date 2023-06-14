@@ -79,6 +79,10 @@ body{
     font-weight: 700;
 }
 
+.menu__list-link--active{
+    color: #0066FF;
+}
+
 .footer{
     background-color: #151515;
     padding: 50px 0 32px;
@@ -135,7 +139,6 @@ body{
 .top{
     color: #fff;
     text-align: center;
-    padding-top: 250px;
     padding-bottom: 50px;
     position: absolute;
     z-index: 5;
@@ -393,6 +396,7 @@ form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    margin-bottom: 70px;
 }
 
 .blog__item{
@@ -416,4 +420,173 @@ form{
     color: #fff;
     background-color: #0066FF;
     padding: 4px 20px;
+}
+
+.showmore-link{
+    text-transform: uppercase;
+    background-color: #151515;
+    padding: 13px;
+    color: #fff;
+    width: 225px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.choose{
+    padding: 100px 0 150px;
+}
+
+.tabs{
+    margin-bottom: 70px;
+}
+
+.tabs__btn{
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 100px;
+}
+
+.tabs__btn-item{
+    font-style: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.tabs__btn-item--active{
+    color: #0066FF;
+}
+
+.tabs__content-item{
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 40px;
+}
+
+.tabs__content-item.tabs__content-item--active{
+    display: grid;
+}
+
+.card{
+    text-align: center;
+}
+
+.card__content{
+    padding: 0 5px;
+    border: 1px solid #0066FF;
+    border-top: 0;
+}
+
+.card__img{
+    display: block;
+}
+
+.card__title{
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card__text{
+    margin-bottom: 20px;
+}
+
+.card__price{
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card__link{
+    display: block;
+    color: #0066FF;
+    border: 1px solid #0066FF;
+    border-top: 0;
+}
+
+.menu__btn{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__btn span{
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+}
+
+@media (max-width: 1180px){
+    .important__list{
+        gap: 30px 20px;
+    }
+    .important__item-img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1040px){
+    .video__content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px){
+    .menu__btn{
+        display: flex;
+    }
+    .menu__btn,
+    .logo{
+        position: relative;
+        z-index: 10;
+    }
+    .menu__list{
+        position: absolute;
+        z-index: 5;
+        background-color: #151515;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        padding-top: 200px;
+        height: 100vh;
+        right: 0;
+        bottom: 0;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        /* justify-content: space-between; */
+    }
+    .menu__list.menu__list--active{
+        transform: translateY(0%);
+    }
+    .why-lease__list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .important__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .footer__menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+        gap: 40px;
+    }
 }
